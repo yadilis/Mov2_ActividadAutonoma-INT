@@ -7,17 +7,18 @@ import RegistroScreen from '../auth/RegistroScreen';
 
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import CrearTareaScreen from '../screens/CrearTareaScreen';
-import GestiónScreen from '../screens/GestionScreen';
+
 import ListaTareasScreen from '../screens/ListaTareasScreen';
+import PerfilUsuarioScreen from '../screens/PerfilUsuarioScreen';
 
 
 const Drawer = createDrawerNavigator();
 
 function MyDrawer() {
   return (
-    <Drawer.Navigator initialRouteName="Lista">
+    <Drawer.Navigator initialRouteName="Crear">
       <Drawer.Screen name="Crear" component={CrearTareaScreen} />
-      <Drawer.Screen name="Gestion" component={GestiónScreen} />
+      <Drawer.Screen name='Perfil' component={PerfilUsuarioScreen} />
       <Drawer.Screen name="Lista" component={ListaTareasScreen} />
      
     </Drawer.Navigator>
